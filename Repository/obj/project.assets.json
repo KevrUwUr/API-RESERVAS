@@ -938,6 +938,19 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2868,6 +2881,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -2876,6 +2894,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Contracts >= 1.0.0",
       "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.0-rc.2.24474.1",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0-rc.2.24474.1"
@@ -2906,6 +2925,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\Kev\\RiderProjects\\API-RESERVAS\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\Kev\\RiderProjects\\API-RESERVAS\\Contracts\\Contracts.csproj"
+            },
             "C:\\Users\\Kev\\RiderProjects\\API-RESERVAS\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\Kev\\RiderProjects\\API-RESERVAS\\Entities\\Entities.csproj"
             }

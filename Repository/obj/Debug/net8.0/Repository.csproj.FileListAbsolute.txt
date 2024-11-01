@@ -9,9 +9,12 @@ C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\Repository.G
 C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
 C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
 C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\Repository.sourcelink.json
 C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
 C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\Repository.dll
 C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\refint\Repository.dll
 C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\Repository.genruntimeconfig.cache
 C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\bin\Debug\net8.0\Contracts.dll
+C:\Users\Kev\RiderProjects\API-RESERVAS\Repository\bin\Debug\net8.0\Contracts.pdb

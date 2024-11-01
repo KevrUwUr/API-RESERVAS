@@ -5,6 +5,7 @@ C:\Users\Kev\RiderProjects\API-RESERVAS\Entities\obj\Debug\net8.0\Entities.Gener
 C:\Users\Kev\RiderProjects\API-RESERVAS\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
 C:\Users\Kev\RiderProjects\API-RESERVAS\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
 C:\Users\Kev\RiderProjects\API-RESERVAS\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Kev\RiderProjects\API-RESERVAS\Entities\obj\Debug\net8.0\Entities.sourcelink.json
 C:\Users\Kev\RiderProjects\API-RESERVAS\Entities\obj\Debug\net8.0\Entities.dll
 C:\Users\Kev\RiderProjects\API-RESERVAS\Entities\obj\Debug\net8.0\refint\Entities.dll
 C:\Users\Kev\RiderProjects\API-RESERVAS\Entities\obj\Debug\net8.0\Entities.pdb

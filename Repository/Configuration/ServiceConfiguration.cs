@@ -9,27 +9,27 @@ public class ServiceConfiguration : IEntityTypeConfiguration<Service>
         builder.HasData(
             new Service
             {
-                ServiceId = new Guid("d9388df8-4c1e-4d8f-85d8-742bb3d3befe"),
+                ServiceId = new Guid("98dc7f61-96b1-489f-8500-6101870b0549"),
                 Name = "Habitación Deluxe"
             },
             new Service
             {
-                ServiceId = new Guid("b27f97c6-3af8-4f15-8414-7e3cb3e4ff15"),
-                Name = "Desayuno Buffet"
+                ServiceId = new Guid("96e0c514-7682-4bfe-afb2-766354ef5fbd"),
+                Name = "Habitación Mediana"
             },
             new Service
             {
-                ServiceId = new Guid("8f3f7af9-345b-4a1f-9e4d-d68b2a81267f"),
-                Name = "Acceso al Spa"
+                ServiceId = new Guid("245f42aa-dea2-4001-bf4e-d0ad2712068a"),
+                Name = "Habitación Pequeña"
             },
             new Service
             {
-                ServiceId = new Guid("e3db7602-54d4-42f3-93c8-d4f3de5cfb0d"),
+                ServiceId = new Guid("70144abe-40a7-46cc-bfab-fa062b660168"),
                 Name = "Servicio de Transporte al Aeropuerto"
             },
             new Service
             {
-                ServiceId = new Guid("4a9f1b42-1c9c-497d-97f7-7a1741a7c287"),
+                ServiceId = new Guid("ea349c4f-694e-4a0c-b05e-cb90e23824cf"),
                 Name = "Gimnasio y Piscina"
             }
         );
