@@ -6,4 +6,6 @@ public interface IServiceManager
     IBookingService BookingService { get; }
     IServiceService ServiceService { get; }
     IBookingServiceService BookingServiceService { get; }
+    IAuthenticationService AuthenticationService { get; }
+
 }

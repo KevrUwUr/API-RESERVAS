@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.DataTransferObjects.BookingService;
@@ -12,6 +13,7 @@ public class BookingServiceController : ControllerBase
     public BookingServiceController(IServiceManager service) => _service = service;
     
     [HttpPost]
+    [Authorize]
     public IActionResult CreateBookingService([FromBody] BookingServiceForCreationDto bookingService)
     {
         if (bookingService is null)

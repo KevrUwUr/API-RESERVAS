@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="HttpClientEndpointsTabState">
-    <option name="requestToText" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;6ebf8584f9920b441a52bb6993cf36da8edac88d&quot; value=&quot;GET https://localhost:7048/api/clients&amp;#10;&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
+    <option name="requestToText" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;6ebf8584f9920b441a52bb6993cf36da8edac88d&quot; value=&quot;GET https://localhost:7048/api/clients&amp;#10;&quot; /&gt;&#10;  &lt;entry key=&quot;ed55c0260f5d5d31f5980ea4014738215efa6ba7&quot; value=&quot;### &amp;#10;GET http://localhost/api/bookings&amp;#10;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS2V2TTEzMyIsImV4cCI6MTczMDc3MTg5OCwiaXNzIjoiQm9va2luZ0FQSSIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjcwODQifQ.vdv3piF72CBd9tFNQrocumDDIwtKxbdcPh_BK_p6wwg&amp;#10;&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
   </component>
 </project>

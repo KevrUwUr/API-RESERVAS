@@ -1,5 +1,6 @@
 using System.Data.SqlTypes;
 using Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.DataTransferObjects.Booking;
@@ -14,6 +15,7 @@ public class BookingController : ControllerBase
     public BookingController(IServiceManager service) => _service = service;
 
     [HttpGet ( Name = "BookingsFiltered")]
+    [Authorize]
     public IActionResult GetBookingsFiltered(Guid? clientId, Guid? serviceId, DateTime? sDate, DateTime? eDate)
     {
         var bookings = _service.BookingService.GetBookingsFiltered(clientId, serviceId, sDate, eDate, trackChanges: false);
@@ -21,18 +23,28 @@ public class BookingController : ControllerBase
     }
     
     [HttpPost]
+    [Authorize]
     public IActionResult CreateBooking([FromBody] BookingForCreationDto booking)
     {
         if (booking is null)
-            return BadRequest("BookingForCreation object is null");
-        ModelState.ClearValidationState(nameof(Booking));
-        if (!ModelState.IsValid)
-            return UnprocessableEntity(ModelState);
+            return BadRequest("El objeto BookingForCreationDto es nulo.");
+
+        ModelState.ClearValidationState(nameof(BookingForCreationDto));
+        if (!TryValidateModel(booking))
+        {
+            var errors = ModelState.Values
+                .SelectMany(v => v.Errors)
+                .Select(e => e.ErrorMessage)
+                .ToList();
+            return UnprocessableEntity(new { Mensaje = "Datos inválidos", Errores = errors });
+        }
 
         var createdBooking = _service.BookingService.CreateBooking(booking);
         return Ok(createdBooking); 
     }
+    
     [HttpDelete("{bookingId:guid}")]
+    [Authorize]
     public IActionResult DeleteBooking(Guid bookingId)
     {
         _service.BookingService.DeleteBooking(bookingId, trackChanges: 
@@ -41,6 +53,7 @@ public class BookingController : ControllerBase
     }
     
     [HttpPut("{bookingId:guid}")]
+    // [Authorize]
     public IActionResult UpdateBooking(Guid bookingId, [FromBody] BookingForUpdateDto booking)
     {
         if (booking is null)

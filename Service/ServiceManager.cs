@@ -1,5 +1,8 @@
 using AutoMapper;
 using Contracts;
+using Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using Service.Contracts;
 
 namespace Service;
@@ -10,9 +13,11 @@ public sealed class ServiceManager : IServiceManager
     private readonly Lazy<IBookingService> _bookingService;
     private readonly Lazy<IServiceService> _serviceService;
     private readonly Lazy<IBookingServiceService> _bookingServiceService;
+    private readonly Lazy<IAuthenticationService> _authenticationService;
+
 
     public ServiceManager(IRepositoryManager repositoryManager, ILoggerManager
-        logger, IMapper mapper)
+        logger, IMapper mapper,UserManager<User> userManager, IConfiguration configuration)
     {
         _clientService = new Lazy<IClientService>(() => new
             ClientService(repositoryManager, logger, mapper));
@@ -22,10 +27,16 @@ public sealed class ServiceManager : IServiceManager
             ServiceService(repositoryManager, logger, mapper));
         _bookingServiceService = new Lazy<IBookingServiceService>(() => new
             BookingServiceService(repositoryManager, logger, mapper));
+        _authenticationService = new Lazy<IAuthenticationService>(() =>
+            new AuthenticationService(logger, mapper, userManager,
+                configuration));
     }
 
     public IClientService ClientService => _clientService.Value;
     public IBookingService BookingService => _bookingService.Value;
     public IServiceService ServiceService => _serviceService.Value;
     public IBookingServiceService BookingServiceService => _bookingServiceService.Value;
+    public IAuthenticationService AuthenticationService =>
+        _authenticationService.Value;
+
 }

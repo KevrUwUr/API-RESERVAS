@@ -22,12 +22,10 @@ namespace Service
         
         public IEnumerable<ClientDto> GetAllClients(bool trackChanges)
         {
-            
                 var clients =
                     _repository.Client.GetAllClients(trackChanges);
                 var clientsDto =  _mapper.Map<IEnumerable<ClientDto>>(clients);
                 return clientsDto;
-            
         }
         
         public ClientDto GetClient(Guid clientId, bool trackChanges)

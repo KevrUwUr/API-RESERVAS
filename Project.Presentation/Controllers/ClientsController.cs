@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 
@@ -10,6 +11,7 @@ public class ClientsController : ControllerBase
     private readonly IServiceManager _service;
     public ClientsController(IServiceManager service) => _service = service;
     [HttpGet (Name = "GetClients")]
+    [Authorize]
     public IActionResult GetClients()
     {
         var clients =
@@ -17,6 +19,7 @@ public class ClientsController : ControllerBase
         return Ok(clients);
     }
     [HttpGet("{clientId:guid}", Name = "GetClientById")]
+    [Authorize]
     public IActionResult GetClient(Guid clientId)
     {
         var client = _service.ClientService.GetClient(clientId, trackChanges: false);

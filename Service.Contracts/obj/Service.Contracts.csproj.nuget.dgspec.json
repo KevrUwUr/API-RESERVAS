@@ -42,6 +42,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -148,7 +154,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Kev\\RiderProjects\\API-RESERVAS\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Kev\\RiderProjects\\API-RESERVAS\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
